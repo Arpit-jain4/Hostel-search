@@ -1,0 +1,19 @@
+<script>
+var image = document.getElementById("aaa");
+var img_array=["images/slider_01.jpg","images/slider_02.jpg","images/slider_03.jpg","images/slider_04.jpg","images/slider_05.jpg”];
+var index=0;
+function slide()
+{
+
+   document["aaa"].src = img_array[index];
+   index++;
+   if(index>=img_array.length)
+   {
+   index=0;
+   }
+}
+setInterval("slide()",2000);
+</script>
+</head>
+<body>
+<img id="aaa" src="images/slider_01.jpg" width="700" height="300" name="image" />
